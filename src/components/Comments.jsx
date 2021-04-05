@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class Comments extends Component {
   render() {
@@ -17,4 +18,10 @@ class Comments extends Component {
   }
 }
 
-export default Comments;
+const mapStateToProps = (state) => ({
+  releaseDate: state.videoReducer.releaseDate,
+  author: state.videoReducer.author,
+  comments: state.videoReducer.comments,
+});
+
+export default connect(mapStateToProps)(Comments);

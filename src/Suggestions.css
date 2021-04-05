@@ -1,0 +1,17 @@
+.suggestions-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.suggestions-container img {
+  width: 25%;
+}
+
+.video-thumbnail {
+  width: 100%;
+}
+
+.video-thumbnail img:hover {
+  cursor: pointer;
+}
